@@ -1,0 +1,7 @@
+Notas SPI:
+
+El MFRC 522 es el esclavo de la comunicacion SPI. El Clock SLCK debe ser generado por el micro. La comunicacion del Micro al MFRC 522 se hace por MOSI (Master Output Slave Input). La comunicacion del MRFC 522 al micro se hace por MISO (Master Input Slave Output).
+
+En los dos de comunicacion, va el bit mas significativo primero. Los datos deben estar estables en el flanco ascendente. La señal NSS tiene que estar baja para habilitar la transmision de bytes en una sola trama. Si queremos mandar mas de una trama, NSS tiene que hacer un flanco ascendente entre las transmisiones. 
+
+
